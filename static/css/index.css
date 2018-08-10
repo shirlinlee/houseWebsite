@@ -1,0 +1,77 @@
+@-webkit-keyframes donut-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes donut-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.wrap {
+  background: #373737;
+  height: 100vh;
+  border-bottom: 10px solid #dab896;
+}
+
+.wrap main {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 960px) {
+  .wrap main {
+    width: 72%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrap {
+    height: 100%;
+  }
+}
+
+header {
+  border-left: 1px solid #dab896;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    border: 0;
+  }
+}
+
+.button_container span {
+  background: #dab896;
+}
+
+.nav-pc .toggle:before {
+  background: #dab896;
+  border: 0;
+}
+
+.nav-pc a {
+  color: #dab896;
+}
+
+.nav-pc a:hover {
+  color: #dab896;
+}
+
+/*# sourceMappingURL=index.css.map */

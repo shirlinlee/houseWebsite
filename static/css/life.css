@@ -1,0 +1,747 @@
+.wrap-life2 main .pic2, .wrap-life2 main .pic3 {
+  -webkit-box-shadow: 0px 9px 28.42px 0.58px rgba(12, 11, 12, .11);
+  box-shadow: 0px 9px 28.42px 0.58px rgba(12, 11, 12, .11);
+}
+
+.bgBox2 .txtbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@-webkit-keyframes donut-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes donut-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  height: auto;
+}
+
+@media screen\0 {
+  body {
+    height: 100%;
+  }
+}
+
+.wrap-life {
+  padding-right: 185px;
+}
+
+@media screen and (max-width: 1366px) {
+  .wrap-life {
+    padding-right: 160px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrap-life {
+    padding: 0;
+  }
+}
+
+.wrap-life .arrowBox a {
+  background: rgba(225, 225, 225, .4);
+}
+
+.wrap-life main {
+  padding-top: 8%;
+}
+
+@media screen and (max-width: 1680px) {
+  .wrap-life main {
+    padding-top: 11%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .wrap-life main {
+    padding-top: 6%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .wrap-life main {
+    padding-top: 10%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrap-life main {
+    padding-top: 12%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .wrap-life main {
+    padding-top: 23%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .wrap-life main {
+    padding-top: 30%;
+  }
+}
+
+.map {
+  width: 59%;
+  margin: auto;
+}
+
+@media screen and (max-height: 900px) {
+  .map {
+    width: 55%;
+  }
+}
+
+@media screen and (max-height: 768px) {
+  .map {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .map {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .map {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+.map p {
+  font-size: 38.4px;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+@media screen and (max-width: 374px) {
+  .map p {
+    font-size: 2rem;
+  }
+}
+
+.map p span {
+  background: #000;
+  padding: 5px 15px;
+}
+
+.zoom {
+  width: 35px;
+  bottom: 15px;
+  right: 15px;
+}
+
+.wrap-life2 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%;
+  margin-top: 1%;
+}
+
+@media screen and (min-width: 961px) {
+  .wrap-life2 main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .wrap-life2 main {
+    margin-top: 3%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrap-life2 main {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .wrap-life2 main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
+.wrap-life2 main .picBox {
+  width: 45%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrap-life2 main .picBox {
+    padding-left: 5%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .wrap-life2 main .picBox {
+    width: 100%;
+    padding-left: 0;
+    height: 45vh;
+    overflow: hidden;
+  }
+}
+
+.wrap-life2 main .pic2 {
+  left: -18%;
+  top: -8%;
+}
+
+@media screen and (max-width: 1440px) {
+  .wrap-life2 main .pic2 {
+    height: 180px;
+    width: 180px;
+    left: -24%;
+    top: 9%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrap-life2 main .pic2 {
+    left: -5%;
+    top: -8%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .wrap-life2 main .pic2 {
+    display: none;
+  }
+}
+
+.wrap-life2 main .pic3 {
+  bottom: -6%;
+  right: -40%;
+}
+
+@media screen and (max-width: 1440px) {
+  .wrap-life2 main .pic3 {
+    display: none;
+  }
+}
+
+.wrap-life2 main .txt {
+  background: white;
+  width: 50%;
+  padding: 50px;
+  margin-left: 30px;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 1780px) {
+  .wrap-life2 main .txt {
+    margin-top: -1%;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .wrap-life2 main .txt {
+    width: 60%;
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .wrap-life2 main .txt {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrap-life2 main .txt {
+    margin-top: -4%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .wrap-life2 main .txt {
+    width: 90%;
+    margin: auto;
+    background: #fff;
+    margin-top: -10vh;
+    z-index: 1;
+  }
+}
+
+.wrap-life2 .bg {
+  top: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.wrap-life3 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 960px) {
+  .wrap-life3 main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.wrap-life3 .txt {
+  background: rgba(255, 255, 255, .9);
+  width: 640px;
+  padding: 50px;
+}
+
+@media screen and (min-width: 961px) {
+  .wrap-life3 .txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrap-life3 .txt {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .wrap-life3 .txt {
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    margin-top: -10vh;
+    background: #fff;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .wrap-life3 .txt {
+    padding: 30px;
+  }
+}
+
+.wrap-life3 .left,
+.wrap-life3 .right {
+  width: 50%;
+  height: 100vh;
+}
+
+.wrap-life3 .left {
+  background: url(../img/4-3-1.jpg) no-repeat center/cover;
+}
+
+@media screen and (max-width: 960px) {
+  .wrap-life3 .left {
+    width: 100%;
+    height: 45vh;
+  }
+}
+
+.wrap-life3 .right {
+  background: url(../img/4-3-2.jpg) no-repeat center/cover;
+}
+
+@media screen and (max-width: 960px) {
+  .wrap-life3 .right {
+    display: none;
+  }
+}
+
+h3 {
+  color: #626262;
+  margin: 10px 0;
+  font-size: 44.8px;
+  font-size: 2.8rem;
+}
+
+@media screen and (max-width: 1440px) {
+  h3 {
+    margin: 5px auto;
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  h3 {
+    font-size: 1.8rem;
+    margin: 5px auto 0;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  h3 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+}
+
+.wrap-life4 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bgBox {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.bgBox > div {
+  height: 25vh;
+}
+
+.bgBox1 {
+  width: 28.57143%;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .bgBox1 {
+    width: 16.66667%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .bgBox1 {
+    width: 100%;
+    position: fixed;
+  }
+}
+
+.bgBox1 > div {
+  width: 50%;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .bgBox1 > div {
+    width: 100%;
+  }
+}
+
+.bgBox1 .box1 {
+  background: url(../img/4-4-p13.png) center/cover;
+}
+
+.bgBox1 .box2 {
+  background: url(../img/4-4-p01.png) center/cover;
+}
+
+.bgBox1 .box3 {
+  background: url(../img/4-4-p02.png) center/cover;
+}
+
+.bgBox1 .box4 {
+  background: url(../img/4-4-p03.png) center/cover;
+}
+
+.bgBox1 .box5 {
+  background: url(../img/4-4-p04.png) center/cover;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .bgBox1 .box5 {
+    display: none;
+  }
+}
+
+.bgBox1 .box6 {
+  background: url(../img/4-4-p05.png) center/cover;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .bgBox1 .box6 {
+    display: none;
+  }
+}
+
+.bgBox1 .box7 {
+  background: url(../img/4-4-p06.png) center/cover;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .bgBox1 .box7 {
+    display: none;
+  }
+}
+
+.bgBox1 .box8 {
+  background: url(../img/4-4-p07.png) center/cover;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .bgBox1 .box8 {
+    display: none;
+  }
+}
+
+.bgBox2 {
+  width: 57.14286%;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .bgBox2 {
+    width: 66.66667%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .bgBox2 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 9vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .bgBox2 {
+    top: 12vh;
+  }
+}
+
+.bgBox2 > div {
+  width: 25%;
+}
+
+.bgBox2 .box1 {
+  background: url(../img/4-4-p12.png) center/cover;
+}
+
+.bgBox2 .box2 {
+  background: url(../img/4-4-p14.png) center/cover;
+}
+
+.bgBox2 .box3 {
+  background: url(../img/4-4-p15.png) center/cover;
+}
+
+.bgBox2 .box4 {
+  background: url(../img/4-4-p16.png) center/cover;
+}
+
+.bgBox2 .box5 {
+  background: url(../img/4-4-p19.png) center/cover;
+}
+
+.bgBox2 .box6 {
+  background: url(../img/4-4-p20.png) center/cover;
+}
+
+.bgBox2 .box7 {
+  background: url(../img/4-4-p08.png) center/cover;
+}
+
+.bgBox2 .box8 {
+  background: url(../img/4-4-p09.png) center/cover;
+}
+
+.bgBox2 .txtbox {
+  width: 100%;
+  height: 50vh;
+}
+
+@media screen and (max-width: 1440px) {
+  .bgBox2 .txtbox {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .bgBox2 .txtbox {
+    height: auto;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .bgBox2 .main-p {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .bgBox2 .main-p {
+    margin: 10px auto;
+  }
+}
+
+.txt-life {
+  width: 85%;
+}
+
+@media screen and (max-height: 880px) {
+  .txt-life {
+    width: 95%;
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .txt-life {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .txt-life {
+    width: 95%;
+    background: rgba(255, 255, 255, .85);
+    padding: 8%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .txt-life p {
+    display: inline;
+  }
+}
+
+.bgBox3 {
+  width: 14.28571%;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .bgBox3 {
+    width: 16.66667%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .bgBox3 {
+    display: none;
+  }
+}
+
+.bgBox3 > div {
+  width: 100%;
+}
+
+.bgBox3 .box1 {
+  background: url(../img/4-4-p21.png) center/cover;
+}
+
+.bgBox3 .box2 {
+  background: url(../img/4-4-p22.png) center/cover;
+}
+
+.bgBox3 .box3 {
+  background: url(../img/4-4-p23.png) center/cover;
+}
+
+.bgBox3 .box4 {
+  background: url(../img/4-4-p24.png) center/cover;
+}
+
+.wrap-life5 .pic {
+  width: 60%;
+  height: 100vh;
+  background: url(../img/4-5.jpg) no-repeat center/cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrap-life5 .pic {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .wrap-life5 .pic {
+    width: 100%;
+    height: 45vh;
+  }
+}
+
+.wrap-life5 .txt {
+  width: 600px;
+  background: #fff;
+  padding: 50px 0 50px 50px;
+  z-index: 1;
+  bottom: 5%;
+  right: 20%;
+}
+
+@media screen and (max-width: 1440px) {
+  .wrap-life5 .txt {
+    width: 35%;
+    right: 17%;
+    bottom: 8%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrap-life5 .txt {
+    width: 49%;
+    right: 4%;
+    bottom: 8%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .wrap-life5 .txt {
+    width: 90%;
+    height: auto;
+    padding: 30px;
+    top: 36vh;
+    left: 50%;
+    right: inherit;
+    bottom: inherit;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+/*# sourceMappingURL=life.css.map */
