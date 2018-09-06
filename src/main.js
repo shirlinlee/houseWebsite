@@ -2,15 +2,18 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import Vuex from 'vuex'
+// import VueAwesomeSwiper from 'vue-awesome-swiper'
+// import 'swiper/dist/css/swiper.css'
+import Viewer from 'v-viewer'
 
 import Index from './Index'
 import stores from './stores.js'
-import router from './router'
 
+// Vue.use(VueAwesomeSwiper)
 Vue.use(Vuex)
+Vue.use(Viewer)
 
 const store = new Vuex.Store(stores)
-
 
 /* eslint-disable no-new */
 new Vue({
@@ -18,7 +21,6 @@ new Vue({
   template: '<Index/>',
   components: { Index },
   // 将store实例注入到根组件下的所有子组件中
-  store,
-  router
-  // 子组件通过this.$store来方位store
+  store
+
 })
