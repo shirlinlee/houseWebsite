@@ -1,81 +1,38 @@
 
-.fade-enter-active,
-.fade-leave-active {
-    transition: all .5s;
+.fade-enter-active {
+    opacity: 1;
 }
 
 .fade-enter {
     opacity: 0;  
 }
-.fade-leave-active,
+.fade-leave-active {
+    position: absolute;
+}
 .fade-leave-to {
-    position: absolute;
     opacity: 0;
-    transition: opacity 0s;
-    
-}
-
-/** 公設篇 **/
-.landscape-enter-active,
-.landscape-leave-active {
-    transition: all .4s;
-}
-
-.landscape-enter {
-    opacity: 0;  
-}
-.landscape-leave-active,
-.landscape-leave-to {
-    position: absolute;
-    opacity: 0;
-    /* transition: opacity 0s; */
-    
-}
-
-/** 家配篇 **/
-.floor-enter-active{
     transition: opacity .5s;
 }
-.floor-enter {
-    opacity: 0;  
-}
-
-main .floor-leave-active {
-    transition: opacity 0s;
-    position: absolute;
-    opacity: 0;
-}
-
-main .floor-leave-to {
-    opacity: 0;  
-}
 
 
-/** canvas動態 **/
-canvas {
-    opacity: 0;
-    transition: opacity .5s .4s;
-}
 
-canvas.fadeIn {
+.full-enter-active {
     opacity: 1;
 }
 
-.canvas-leave-active {
-    transition: all .5s;
+.full-enter {
+    opacity: 0;  
 }
-.canvas-enter,
-.canvas-leave-to {
-    opacity: 0!important;
-}
-
-.canvas-leave-to,.canvas-leave-active {
+.full-leave-active {
     position: absolute;
-    top: 0;
 }
-
-.wrap .page.white {
-    color: #fff;
+.full-leave-to {
+    opacity: 0;
+    /* transition: opacity 9s; */
+}
+.space main, .life main {
+    transition: opacity .5s;
+    
 }
 
 
@@ -97,7 +54,7 @@ canvas.fadeIn {
     background: #000;
 }
 
-header .nav-pc a.active:hover {
+/* header .nav-pc a.active:hover {
     cursor: default;
     color: #000;
     -webkit-transform: translateX(0);
@@ -112,7 +69,7 @@ header .nav-pc a.active:hover::before {
 header.header-w .nav-pc a.active:hover{
     color: #fff;
     
-}
+} */
 
 .sq-tab a:not(.active) {
     cursor: pointer;

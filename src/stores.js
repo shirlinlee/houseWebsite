@@ -1,17 +1,20 @@
 export default {
   // 存储状态值
   state: {
-    show: 0,
-    isWebsite: false,
+    show: -1,
+    isClick: false,
     onTop: true
   },
 
   mutations: {
     // 主選單點擊, 次選單也要重新顯示第一個
-    nav(state, num) {
-      console.log('store',num);
-      state.show = num;
-      state.isBlackTheme = false;
+    nav(state, data) {
+      // console.log('store',data.num);
+      state.show = data.num;
+      state.isClick = data.click;
+      setTimeout(function(){
+        state.isClick = false;
+      },800)
     },
      // 次選單
     tab(state, tab) {
