@@ -179,22 +179,22 @@ export default {
 
       $(window).on('load',function(){
         vue.reSize();
+        vue.firstLoad = false;
       })
       
       $(window).on('scroll',function(){
-        if(!vue.isScrolling) {
+        if(!vue.isScrolling && !vue.firstLoad) {
           var scroll = Number($(window).scrollTop()); 
-          // console.log('window scroll: '+scroll);
+          // console.log(scroll,  vue.threshold_0,  vue.threshold_1 );
           
-          if( scroll < vue.windowHeight ){
+          if( scroll < vue.threshold_1 ){
               if( vue.$store.state.show ===-1) return;
               vue.$store.commit('scrollHandler', true);
               vue.$store.commit('nav',{ num:-1, click:false }); 
               
+              
           } else {
               vue.$store.commit('scrollHandler', false);
-              // console.log(vue.$store.state.show);
-
               if( scroll >= vue.threshold_1 && scroll < vue.threshold_2 ) {
                   if( vue.$store.state.show ===0) return;
                   vue.$store.commit('nav',{ num:0, click:false }); 
@@ -206,15 +206,15 @@ export default {
                   vue.temp_show = 1;
                   return;
 
-              } else if ( scroll >= vue.threshold_3 && scroll < vue.threshold_4 - vue.windowHeight/1.7 ){
+              } else if ( scroll >= vue.threshold_3 && scroll < vue.threshold_4 - window.innerHeight/1.7 ){
                   if( vue.$store.state.show ===2) return;
                   vue.$store.commit('nav',{ num:2, click:false });
                   vue.temp_show = 2;
                   return;
 
-              } 
-              else {
-                  if( vue.$store.state.show ===3) return;
+              } else if ( scroll >= vue.threshold_4 - window.innerHeight/1.7 ) {
+                  console.log('4', scroll, vue.threshold_4 - window.innerHeight/1.7);
+                  if( vue.$store.state.show === 3 ) return;
                   vue.$store.commit('nav',{ num:3, click:false });
                   vue.temp_show = 3;               
               }
@@ -241,11 +241,12 @@ export default {
       } 
 
       this.windowHeight = window.innerHeight;
-      this.threshold_1 = this.windowHeight;
-      this.threshold_2 = $(this.$refs.space)[0].offsetTop;
-      this.threshold_3 = $(this.$refs.life)[0].offsetTop;
-      this.threshold_4 = $(this.$refs.info)[0].offsetTop;
-      console.log(window.innerWidth);
+      // this.threshold_0 = this.windowHeight-85;
+      this.threshold_1 = this.windowHeight-85;
+      this.threshold_2 = $(this.$refs.space)[0].offsetTop -75;
+      this.threshold_3 = $(this.$refs.life)[0].offsetTop -75;
+      this.threshold_4 = $(this.$refs.info)[0].offsetTop -75;
+      console.log(this.windowHeight);
       
     },
 
